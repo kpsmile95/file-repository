@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-16T17:09:55.252Z" agent="5.0 (Windows)" etag="NQNgH3djxzjAaER6TJ0F" version="21.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-16T17:18:39.573Z" agent="5.0 (Windows)" etag="m6J4kDxgy_9JFg9wSRXT" version="21.0.6" type="github">
   <diagram name="第 1 页" id="Y8PNDL50BQj4xOIG8hcO">
     <mxGraphModel dx="2074" dy="1114" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -84,14 +84,17 @@
         <mxCell id="8H6UXR6yjuKnyTyYUlck-29" value="开始偏向锁撤销" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="968" y="280" width="130" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6eZ106JahWfcC5_vLtNl-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-31" target="6eZ106JahWfcC5_vLtNl-3">
+        <mxCell id="6eZ106JahWfcC5_vLtNl-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-31" target="8H6UXR6yjuKnyTyYUlck-40">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-31" value="&lt;div&gt;暂停原持有偏向锁线程&lt;/div&gt;&lt;div&gt;stop the world&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="968" y="390" width="130" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="6eZ106JahWfcC5_vLtNl-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-33" target="6eZ106JahWfcC5_vLtNl-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-33" value="升级为轻量级锁" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
-          <mxGeometry x="1510" y="70" width="130" height="60" as="geometry" />
+          <mxGeometry x="1387" y="530" width="130" height="60" as="geometry" />
         </mxCell>
         <mxCell id="6eZ106JahWfcC5_vLtNl-21" value="BiasedLockingBulkRebiasThreshold = 20&lt;div&gt;大于20&lt;br&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-40" target="6eZ106JahWfcC5_vLtNl-20">
           <mxGeometry relative="1" as="geometry" />
@@ -100,7 +103,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-40" value="&lt;div&gt;Class类对象撤销计数器&lt;/div&gt;&lt;div&gt;是否大于20时&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
-          <mxGeometry x="1250" y="580" width="230" height="80" as="geometry" />
+          <mxGeometry x="1117" y="580" width="230" height="80" as="geometry" />
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-55" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="8H6UXR6yjuKnyTyYUlck-53" target="8H6UXR6yjuKnyTyYUlck-18" edge="1">
           <mxGeometry x="-0.877" relative="1" as="geometry">
@@ -117,37 +120,11 @@
         <mxCell id="8H6UXR6yjuKnyTyYUlck-53" value="&lt;div&gt;MarkWork中epoch是否与&lt;/div&gt;&lt;div&gt;类epoch相等&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="610" y="265" width="170" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="6eZ106JahWfcC5_vLtNl-6" value="未活动状态/已退出同步代码块" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="6eZ106JahWfcC5_vLtNl-3" target="6eZ106JahWfcC5_vLtNl-5">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="6eZ106JahWfcC5_vLtNl-8" value="还在同步代码块内" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="6eZ106JahWfcC5_vLtNl-3" target="8H6UXR6yjuKnyTyYUlck-40">
-          <mxGeometry x="-0.3077" relative="1" as="geometry">
-            <mxPoint x="1220" y="270" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="1220" y="514" />
-              <mxPoint x="1220" y="620" />
-            </Array>
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="6eZ106JahWfcC5_vLtNl-3" value="检查原持有偏向锁的线程" style="rhombus;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
-          <mxGeometry x="918" y="474" width="230" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="6eZ106JahWfcC5_vLtNl-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="6eZ106JahWfcC5_vLtNl-5" target="8H6UXR6yjuKnyTyYUlck-40">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1033" y="680" />
-              <mxPoint x="1365" y="680" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="6eZ106JahWfcC5_vLtNl-5" value="&lt;div&gt;修改对象为无锁不可偏向状态&lt;/div&gt;&lt;div&gt;ThreadID | epoch | age | (是否偏向锁)0 | (标志位)01&lt;br&gt;&lt;/div&gt;&lt;div&gt;一旦进入该状态，理论上没法再获得偏向锁&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
-          <mxGeometry x="885.5" y="590" width="295" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="6eZ106JahWfcC5_vLtNl-27" value="&lt;div&gt;BiasedLockingBulkRevokeThreshold = 40&lt;/div&gt;&lt;div&gt;大于40&lt;br&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="6eZ106JahWfcC5_vLtNl-14" target="8H6UXR6yjuKnyTyYUlck-33">
+        <mxCell id="6eZ106JahWfcC5_vLtNl-27" value="&lt;div&gt;BiasedLockingBulkRevokeThreshold = 40&lt;/div&gt;&lt;div&gt;大于40&lt;br&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="6eZ106JahWfcC5_vLtNl-14" target="8H6UXR6yjuKnyTyYUlck-33">
           <mxGeometry x="-0.5789" relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1365" y="100" />
+              <mxPoint x="1367" y="240" />
+              <mxPoint x="1367" y="560" />
             </Array>
             <mxPoint as="offset" />
           </mxGeometry>
@@ -161,19 +138,39 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="6eZ106JahWfcC5_vLtNl-14" value="&lt;div&gt;Class类对象撤销计数器&lt;/div&gt;&lt;div&gt;是否大于40时&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
-          <mxGeometry x="1250" y="200" width="230" height="80" as="geometry" />
+          <mxGeometry x="1117" y="200" width="230" height="80" as="geometry" />
         </mxCell>
         <mxCell id="6eZ106JahWfcC5_vLtNl-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="6eZ106JahWfcC5_vLtNl-20" target="6eZ106JahWfcC5_vLtNl-23">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="6eZ106JahWfcC5_vLtNl-20" value="Class类对象的epoch值+1" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
-          <mxGeometry x="1300" y="440" width="130" height="60" as="geometry" />
+          <mxGeometry x="1167" y="440" width="130" height="60" as="geometry" />
         </mxCell>
         <mxCell id="6eZ106JahWfcC5_vLtNl-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="6eZ106JahWfcC5_vLtNl-23" target="6eZ106JahWfcC5_vLtNl-14">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="6eZ106JahWfcC5_vLtNl-23" value="正处于临界区内的对象MarkWord中epoch值+1" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
-          <mxGeometry x="1300" y="320" width="130" height="60" as="geometry" />
+          <mxGeometry x="1167" y="320" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6eZ106JahWfcC5_vLtNl-36" value="还在同步代码块内" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" source="6eZ106JahWfcC5_vLtNl-41" parent="1">
+          <mxGeometry x="-0.3077" relative="1" as="geometry">
+            <mxPoint x="1882.5" y="704" as="sourcePoint" />
+            <mxPoint x="1940" y="570" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1920" y="560" />
+              <mxPoint x="1920" y="560" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6eZ106JahWfcC5_vLtNl-45" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;未活动状态/已退出同步代码块&lt;br&gt;&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;" edge="1" parent="1" source="6eZ106JahWfcC5_vLtNl-41" target="6eZ106JahWfcC5_vLtNl-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6eZ106JahWfcC5_vLtNl-41" value="检查原持有偏向锁的线程" style="rhombus;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="1570" y="520" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6eZ106JahWfcC5_vLtNl-43" value="&lt;div&gt;修改对象为无锁不可偏向状态&lt;/div&gt;&lt;div&gt;ThreadID | epoch | age | (是否偏向锁)0 | (标志位)01&lt;br&gt;&lt;/div&gt;&lt;div&gt;一旦进入该状态，理论上没法再获得偏向锁&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="1537.5" y="390" width="295" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
