@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-16T10:01:59.902Z" agent="5.0 (Windows)" etag="dbqRnd75opN2rQGgeE66" version="21.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-16T10:06:23.681Z" agent="5.0 (Windows)" etag="CjI4NN1oqcasjG1pTnuU" version="21.0.2" type="github">
   <diagram name="第 1 页" id="Y8PNDL50BQj4xOIG8hcO">
     <mxGraphModel dx="1195" dy="628" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -43,9 +43,11 @@
           <mxGeometry x="195" y="675" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-52" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-13" target="8H6UXR6yjuKnyTyYUlck-8">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry x="-0.8626" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="8H6UXR6yjuKnyTyYUlck-54" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-13" target="8H6UXR6yjuKnyTyYUlck-53">
+        <mxCell id="8H6UXR6yjuKnyTyYUlck-54" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-13" target="8H6UXR6yjuKnyTyYUlck-53">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-13" value="&lt;div&gt;检查对象头MarkWord中&lt;/div&gt;&lt;div&gt;记录的是否是当前线程&lt;br&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
@@ -53,6 +55,11 @@
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-50" value="成功" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-18" target="8H6UXR6yjuKnyTyYUlck-8">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8H6UXR6yjuKnyTyYUlck-56" value="失败" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-18" target="8H6UXR6yjuKnyTyYUlck-25">
+          <mxGeometry x="-0.8876" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-18" value="&lt;div&gt;将线程ID以CAS方式&lt;/div&gt;&lt;div&gt;写入MarkWord&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
           <mxGeometry x="170" y="474" width="170" height="80" as="geometry" />
@@ -66,10 +73,10 @@
         <mxCell id="8H6UXR6yjuKnyTyYUlck-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-25" target="8H6UXR6yjuKnyTyYUlck-29">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8H6UXR6yjuKnyTyYUlck-25" value="&lt;div&gt;对象已经偏向其他线程&lt;/div&gt;&lt;div&gt;每个对象只能偏向一次&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
-          <mxGeometry x="765" y="610" width="130" height="60" as="geometry" />
+        <mxCell id="8H6UXR6yjuKnyTyYUlck-25" value="&lt;div&gt;对象已经偏向其他线程&lt;/div&gt;&lt;div&gt;每个对象只能偏向一次&lt;/div&gt;&lt;div&gt;出现竞争&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="745" y="390" width="130" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="8H6UXR6yjuKnyTyYUlck-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-29" target="8H6UXR6yjuKnyTyYUlck-31">
+        <mxCell id="8H6UXR6yjuKnyTyYUlck-32" value="原持有偏向锁的线程到达safe point" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-29" target="8H6UXR6yjuKnyTyYUlck-31">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-29" value="开始偏向锁撤销" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
@@ -78,7 +85,7 @@
         <mxCell id="8H6UXR6yjuKnyTyYUlck-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-31" target="8H6UXR6yjuKnyTyYUlck-40">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8H6UXR6yjuKnyTyYUlck-31" value="&lt;div&gt;原持有偏向锁的线程到达safe point将其暂停&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+        <mxCell id="8H6UXR6yjuKnyTyYUlck-31" value="&lt;div&gt;暂停原持有偏向锁线程&lt;/div&gt;&lt;div&gt;stop the world&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
           <mxGeometry x="925" y="720" width="130" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-33" value="升级为轻量级锁" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
@@ -109,7 +116,7 @@
         <mxCell id="8H6UXR6yjuKnyTyYUlck-43" value="正处于临界区内的对象MarkWord中epoch值+1" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
           <mxGeometry x="730" y="950" width="130" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="8H6UXR6yjuKnyTyYUlck-55" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-53" target="8H6UXR6yjuKnyTyYUlck-18">
+        <mxCell id="8H6UXR6yjuKnyTyYUlck-55" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-53" target="8H6UXR6yjuKnyTyYUlck-18">
           <mxGeometry x="-0.877" relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="695" y="460" />
@@ -117,6 +124,9 @@
             </Array>
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="8H6UXR6yjuKnyTyYUlck-57" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-53" target="8H6UXR6yjuKnyTyYUlck-25">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-53" value="&lt;div&gt;MarkWork中epoch是否与&lt;/div&gt;&lt;div&gt;类epoch相等&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
           <mxGeometry x="610" y="265" width="170" height="80" as="geometry" />
