@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-03-16T09:40:36.487Z" agent="5.0 (Windows)" etag="vl8jt3JYPkvPbD9z0Mkn" version="21.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-16T10:01:59.902Z" agent="5.0 (Windows)" etag="dbqRnd75opN2rQGgeE66" version="21.0.2" type="github">
   <diagram name="第 1 页" id="Y8PNDL50BQj4xOIG8hcO">
-    <mxGraphModel dx="1434" dy="754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1195" dy="628" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -24,98 +24,102 @@
         <mxCell id="8H6UXR6yjuKnyTyYUlck-3" value="是否偏向锁？" style="rhombus;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
           <mxGeometry x="170" y="160" width="170" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="8H6UXR6yjuKnyTyYUlck-9" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-4" target="8H6UXR6yjuKnyTyYUlck-8">
+        <mxCell id="8H6UXR6yjuKnyTyYUlck-48" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-4" target="8H6UXR6yjuKnyTyYUlck-19">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8H6UXR6yjuKnyTyYUlck-14" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-4" target="8H6UXR6yjuKnyTyYUlck-13">
+        <mxCell id="8H6UXR6yjuKnyTyYUlck-51" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-4" target="8H6UXR6yjuKnyTyYUlck-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8H6UXR6yjuKnyTyYUlck-4" value="&lt;div&gt;检查对象头MarkWord中&lt;/div&gt;&lt;div&gt;记录的是否是当前线程&lt;br&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
-          <mxGeometry x="170" y="260" width="170" height="80" as="geometry" />
+        <mxCell id="8H6UXR6yjuKnyTyYUlck-4" value="&lt;div&gt;检查对象头MarkWord&lt;/div&gt;&lt;div&gt;中记录的当前线程ID&lt;/div&gt;&lt;div&gt;是否是null&lt;br&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="155" y="260" width="200" height="90" as="geometry" />
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-8" target="8H6UXR6yjuKnyTyYUlck-11">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-8" value="&lt;div&gt;获得偏向锁&lt;/div&gt;&lt;div&gt;ThreadID | epoch | age | (是否偏向锁)1 | (标志位)01&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
-          <mxGeometry x="107.5" y="380" width="295" height="60" as="geometry" />
+          <mxGeometry x="107.5" y="594" width="295" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-11" value="执行同步代码块" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
-          <mxGeometry x="195" y="470" width="120" height="60" as="geometry" />
+          <mxGeometry x="195" y="675" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="8H6UXR6yjuKnyTyYUlck-20" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-13" target="8H6UXR6yjuKnyTyYUlck-19">
+        <mxCell id="8H6UXR6yjuKnyTyYUlck-52" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-13" target="8H6UXR6yjuKnyTyYUlck-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8H6UXR6yjuKnyTyYUlck-27" value="不是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-13" target="8H6UXR6yjuKnyTyYUlck-25">
+        <mxCell id="8H6UXR6yjuKnyTyYUlck-54" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-13" target="8H6UXR6yjuKnyTyYUlck-53">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8H6UXR6yjuKnyTyYUlck-13" value="&lt;div&gt;检查对象头MarkWord中&lt;/div&gt;&lt;div&gt;记录的当前线程ID是否是&lt;/div&gt;&lt;div&gt;null&lt;br&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
-          <mxGeometry x="440" y="260" width="170" height="80" as="geometry" />
+        <mxCell id="8H6UXR6yjuKnyTyYUlck-13" value="&lt;div&gt;检查对象头MarkWord中&lt;/div&gt;&lt;div&gt;记录的是否是当前线程&lt;br&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="402.5" y="265" width="170" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="8H6UXR6yjuKnyTyYUlck-24" value="成功" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-18" target="8H6UXR6yjuKnyTyYUlck-8">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="430" y="510" />
-              <mxPoint x="430" y="410" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="8H6UXR6yjuKnyTyYUlck-28" value="失败" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-18" target="8H6UXR6yjuKnyTyYUlck-25">
+        <mxCell id="8H6UXR6yjuKnyTyYUlck-50" value="成功" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-18" target="8H6UXR6yjuKnyTyYUlck-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-18" value="&lt;div&gt;将线程ID以CAS方式&lt;/div&gt;&lt;div&gt;写入MarkWord&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
-          <mxGeometry x="440" y="470" width="170" height="80" as="geometry" />
+          <mxGeometry x="170" y="474" width="170" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="8H6UXR6yjuKnyTyYUlck-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-19" target="8H6UXR6yjuKnyTyYUlck-18">
+        <mxCell id="8H6UXR6yjuKnyTyYUlck-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-19" target="8H6UXR6yjuKnyTyYUlck-18">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-19" value="对象为匿名偏向状态，可以加偏向锁" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
-          <mxGeometry x="465" y="380" width="120" height="60" as="geometry" />
+          <mxGeometry x="195" y="390" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-25" target="8H6UXR6yjuKnyTyYUlck-29">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-25" value="&lt;div&gt;对象已经偏向其他线程&lt;/div&gt;&lt;div&gt;每个对象只能偏向一次&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
-          <mxGeometry x="620" y="380" width="130" height="60" as="geometry" />
+          <mxGeometry x="765" y="610" width="130" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-29" target="8H6UXR6yjuKnyTyYUlck-31">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-29" value="开始偏向锁撤销" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
-          <mxGeometry x="780" y="380" width="130" height="60" as="geometry" />
+          <mxGeometry x="925" y="610" width="130" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-31" target="8H6UXR6yjuKnyTyYUlck-40">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-31" value="&lt;div&gt;原持有偏向锁的线程到达safe point将其暂停&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
-          <mxGeometry x="780" y="490" width="130" height="60" as="geometry" />
+          <mxGeometry x="925" y="720" width="130" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-33" value="升级为轻量级锁" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
-          <mxGeometry x="990" y="380" width="130" height="60" as="geometry" />
+          <mxGeometry x="1135" y="610" width="130" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-39" value="&lt;div&gt;BiasedLockingBulkRebiasThreshold = 20&lt;/div&gt;&lt;div&gt;大于20&lt;br&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-40" target="8H6UXR6yjuKnyTyYUlck-38">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="845" y="660" as="sourcePoint" />
+            <mxPoint x="990" y="890" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8H6UXR6yjuKnyTyYUlck-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-38" target="8H6UXR6yjuKnyTyYUlck-43">
+        <mxCell id="8H6UXR6yjuKnyTyYUlck-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-38" target="8H6UXR6yjuKnyTyYUlck-43">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-38" value="Class类对象的epoch值+1" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
-          <mxGeometry x="780" y="720" width="130" height="60" as="geometry" />
+          <mxGeometry x="925" y="950" width="130" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-42" value="小于20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-40" target="8H6UXR6yjuKnyTyYUlck-33">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="970" y="620" />
-              <mxPoint x="970" y="410" />
+              <mxPoint x="1115" y="850" />
+              <mxPoint x="1115" y="640" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-40" value="&lt;div&gt;Class类对象撤销计数器&lt;/div&gt;&lt;div&gt;是否大于20时&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
-          <mxGeometry x="730" y="580" width="230" height="80" as="geometry" />
+          <mxGeometry x="875" y="810" width="230" height="80" as="geometry" />
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-43" value="正处于临界区内的对象MarkWord中epoch值+1" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
-          <mxGeometry x="585" y="720" width="130" height="60" as="geometry" />
+          <mxGeometry x="730" y="950" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8H6UXR6yjuKnyTyYUlck-55" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-53" target="8H6UXR6yjuKnyTyYUlck-18">
+          <mxGeometry x="-0.877" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="695" y="460" />
+              <mxPoint x="255" y="460" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8H6UXR6yjuKnyTyYUlck-53" value="&lt;div&gt;MarkWork中epoch是否与&lt;/div&gt;&lt;div&gt;类epoch相等&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="610" y="265" width="170" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
