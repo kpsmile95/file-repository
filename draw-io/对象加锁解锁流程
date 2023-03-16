@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-16T08:56:29.560Z" agent="5.0 (Windows)" etag="M0-JdTnixU-lSytFlzk8" version="21.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-16T09:20:21.542Z" agent="5.0 (Windows)" etag="fV9wWNi2LJ7SMn__inLq" version="21.0.2" type="github">
   <diagram name="第 1 页" id="Y8PNDL50BQj4xOIG8hcO">
     <mxGraphModel dx="1434" dy="754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -95,8 +95,14 @@
         <mxCell id="8H6UXR6yjuKnyTyYUlck-33" value="升级为轻量级锁" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
           <mxGeometry x="990" y="380" width="130" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="8H6UXR6yjuKnyTyYUlck-35" value="同一Class类对象撤销次数到达20时，开始进行批量重定向" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+        <mxCell id="8H6UXR6yjuKnyTyYUlck-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-35" target="8H6UXR6yjuKnyTyYUlck-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8H6UXR6yjuKnyTyYUlck-35" value="同一Class类对象撤销次数到达20时，开始进行批量偏向" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
           <mxGeometry x="780" y="600" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8H6UXR6yjuKnyTyYUlck-38" value="Class类对象的epoch值+1" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="780" y="700" width="130" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
