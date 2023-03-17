@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-03-17T09:58:51.352Z" agent="5.0 (Windows)" etag="JOOKJTVFhrZNyINxEhLx" version="21.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-17T10:03:51.003Z" agent="5.0 (Windows)" etag="9kPrC66lpU5VlP8lOw0R" version="21.0.6" type="github">
   <diagram name="第 1 页" id="Y8PNDL50BQj4xOIG8hcO">
-    <mxGraphModel dx="1509" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1793" dy="2112" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,6 +13,16 @@
         <mxCell id="8H6UXR6yjuKnyTyYUlck-6" value="01(标志位)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="8H6UXR6yjuKnyTyYUlck-2" target="8H6UXR6yjuKnyTyYUlck-3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0Wx5KNQBChf4VUPkPu8S-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="8H6UXR6yjuKnyTyYUlck-2" target="0Wx5KNQBChf4VUPkPu8S-50">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="-250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0Wx5KNQBChf4VUPkPu8S-47" value="00(已加轻量级锁)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="0Wx5KNQBChf4VUPkPu8S-46">
+          <mxGeometry x="-0.1601" y="-1" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="8H6UXR6yjuKnyTyYUlck-2" value="目前锁状态？" style="rhombus;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
@@ -322,6 +332,21 @@
         </mxCell>
         <mxCell id="0Wx5KNQBChf4VUPkPu8S-31" value="&lt;div&gt;mutex&lt;/div&gt;&lt;div&gt;挂起当前线程&lt;br&gt;&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
           <mxGeometry x="3835" y="122.5" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0Wx5KNQBChf4VUPkPu8S-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0Wx5KNQBChf4VUPkPu8S-45" target="0Wx5KNQBChf4VUPkPu8S-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0Wx5KNQBChf4VUPkPu8S-45" value="是否是当前线程获取的锁" style="rhombus;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="770" y="-194.5" width="205" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="0Wx5KNQBChf4VUPkPu8S-49" value="&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;自旋自/适应自旋&lt;/font&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1158" y="-210" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="0Wx5KNQBChf4VUPkPu8S-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0Wx5KNQBChf4VUPkPu8S-50" target="0Wx5KNQBChf4VUPkPu8S-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0Wx5KNQBChf4VUPkPu8S-50" value="&lt;div&gt;当前线程的栈中&lt;/div&gt;&lt;div&gt;创建一个新的LockRecord&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="490" y="-190" width="180" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
